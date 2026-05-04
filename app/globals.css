@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────
+   Theme design tokens declared here and consumed via CSS variables.
+───────────────────────────────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-canvas:       #0a0a0a;
+  --color-card:         #111111;
+  --color-card-hover:   #161616;
+  --color-line:         #1f1f1f;
+  --color-line-hover:   #2e2e2e;
+
+  --color-ink:          #e8e8e8;
+  --color-ink-muted:    #888888;
+  --color-ink-dim:      #4a4a4a;
+
+  --color-accent:       #7c6aff;
+  --color-accent-text:  #a78bfa;
+
+  /* Week palette */
+  --color-w-gold:   #c9a96e;
+  --color-w-sky:    #7ab0c9;
+  --color-w-violet: #a07abe;
+  --color-w-green:  #6a9070;
+
+  /* Fonts */
+  --font-sans: "DM Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "DM Mono", "Cascadia Code", "SF Mono", ui-monospace, monospace;
+
+  /* Border radius */
+  --radius-card: 14px;
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.light {
+  --color-canvas:       #f7f7f7;
+  --color-card:         #ffffff;
+  --color-card-hover:   #f3f3f3;
+  --color-line:         #d8d8d8;
+  --color-line-hover:   #c4c4c4;
+
+  --color-ink:          #111111;
+  --color-ink-muted:    #4b5563;
+  --color-ink-dim:      #6b7280;
+
+  --color-accent:       #7c3aed;
+  --color-accent-text:  #5b21b6;
+}
+
+/* ── Form controls ───────────────────────────────────────────────── */
+select,
+select option {
+  background-color: var(--color-card);
+  color: var(--color-ink);
+}
+
+select {
+  border-color: var(--color-line);
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+option {
+  background-color: var(--color-card);
+  color: var(--color-ink);
+}
+
+/* ── Animations ───────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseRing {
+  0%   { transform: scale(1);    opacity: 0.6; }
+  100% { transform: scale(1.4);  opacity: 0; }
+}
+
+.animate-fade-up { animation: fadeUp 0.55s cubic-bezier(0.16,1,0.3,1) both; }
+
+.stagger-children > *:nth-child(1) { animation-delay:   0ms; }
+.stagger-children > *:nth-child(2) { animation-delay:  70ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 140ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 210ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 280ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 350ms; }
+
+/* ── Status dot ───────────────────────────────────────────────── */
+.status-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 9999px;
+  background: #4ade80;
+  position: relative;
+  flex-shrink: 0;
+}
+.status-dot::after {
+  content: "";
+  position: absolute; inset: -3px;
+  border-radius: 9999px;
+  border: 1px solid rgba(74,222,128,0.45);
+  animation: pulseRing 1.6s ease-out infinite;
+}
+
+/* ── Prose (log pages) ────────────────────────────────────────── */
+.prose-log h2 {
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 2rem; margin-bottom: 0.5rem;
+}
+.prose-log h3 {
+  font-size: 0.95rem; font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 1.5rem; margin-bottom: 0.4rem;
+}
+.prose-log p {
+  font-size: 0.9375rem; line-height: 1.8;
+  color: var(--color-ink-muted); margin-bottom: 1rem;
+}
+.prose-log strong { color: var(--color-ink); font-weight: 600; }
+.prose-log ul, .prose-log ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+.prose-log li {
+  font-size: 0.9375rem; line-height: 1.75;
+  color: var(--color-ink-muted); margin-bottom: 0.25rem;
+}
+.prose-log code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  background: var(--color-card);
+  padding: 0.1rem 0.35rem; border-radius: 5px;
+  color: var(--color-ink-muted);
+  border: 1px solid var(--color-line);
+}
+.prose-log a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+.prose-log hr { border: none; border-top: 1px solid var(--color-line); margin: 2rem 0; }

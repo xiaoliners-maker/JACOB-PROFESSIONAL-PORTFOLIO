@@ -1,0 +1,67 @@
+[
+  {
+    "id": "meditrack",
+    "title": "MediTrack",
+    "description": "A full-stack health maintenance and medication tracking system with role-based routing for Doctor and Patient views. Features patient dashboards, prescription listings, and adherence tracking.",
+    "techStack": ["React.js", "Firebase", "Firestore", "TypeScript", "Tailwind CSS"],
+    "completionDate": "2026-04-25",
+    "category": "Web App",
+    "featured": true,
+    "slug": "meditrack",
+    "liveUrl": "https://meditrack-web-system.vercel.app/login",
+    "repoUrl": "https://github.com/maecryshel/MediTrack-Web-System"
+  },
+  {
+    "id": "meditrack-mobile",
+    "title": "MediTrack Mobile",
+    "description": "Flutter-based mobile companion to the MediTrack web system. Includes edit profile, avatar upload, push notifications, and offline-capable Firestore sync.",
+    "techStack": ["Flutter", "Dart", "Firebase", "Firestore"],
+    "completionDate": "2026-04-25",
+    "category": "Mobile App",
+    "featured": true,
+    "slug": "meditrack-mobile",
+    "liveUrl": "https://drive.google.com/drive/folders/1hAnSS8sodqsIYsq07cJEbjKbEsojZhyK?usp=sharing",
+    "repoUrl": "https://github.com/maecryshel/MediTrack-Web-System"
+  },
+  {
+    "id": "h4m-presentation",
+    "title": "Hack4Mapandan (H4M)",
+    "description": "Competition entry for Hack4Mapandan — a health-focused hackathon. Built the full pitch deck and web demo for the Health Maintenance Medication Tracking solution.",
+    "techStack": ["React.js", "Firebase", "Vercel", "Git"],
+    "completionDate": "2026-04-17",
+    "category": "Hackathon",
+    "featured": true,
+    "slug": "h4m-presentation",
+    "liveUrl": "https://drive.google.com/drive/folders/1alRsYgfg_zGLdYANv8KxCofx0BEpBKbB?usp=sharing"
+  },
+  {
+    "id": "dms-landing",
+    "title": "DMS Landing Page",
+    "description": "A modern landing page for the Document Management System project, built during orientation week with clean UI and responsive layout.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "completionDate": "2026-02-13",
+    "category": "Web App",
+    "featured": false,
+    "slug": "dms-landing"
+  },
+  {
+    "id": "bir-research-tool",
+    "title": "BIR Research Tool",
+    "description": "A research and data aggregation tool built for BIR-related field interviews and compliance documentation. Streamlines interview data entry and reporting.",
+    "techStack": ["Node.js", "TypeScript", "Supabase"],
+    "completionDate": "2026-02-20",
+    "category": "Tool",
+    "featured": false,
+    "slug": "bir-research-tool"
+  },
+  {
+    "id": "node-projects",
+    "title": "Node.js Mini Projects",
+    "description": "A collection of Node.js experiments and mini-projects built during the early internship weeks, covering REST APIs, file systems, and Express routing.",
+    "techStack": ["Node.js", "TypeScript", "Git"],
+    "completionDate": "2026-02-27",
+    "category": "Tool",
+    "featured": false,
+    "slug": "node-projects"
+  }
+]
