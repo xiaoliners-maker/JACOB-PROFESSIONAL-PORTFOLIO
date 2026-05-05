@@ -10,7 +10,7 @@
     "slug": "meditrack",
     "liveUrl": "https://meditrack-web-system.vercel.app/login",
     "repoUrl": "https://github.com/maecryshel/MediTrack-Web-System"
-  },
+  },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
   {
     "id": "meditrack-mobile",
     "title": "MediTrack Mobile",
@@ -43,16 +43,6 @@
     "category": "Web App",
     "featured": false,
     "slug": "dms-landing"
-  },
-  {
-    "id": "bir-research-tool",
-    "title": "BIR Research Tool",
-    "description": "A research and data aggregation tool built for BIR-related field interviews and compliance documentation. Streamlines interview data entry and reporting.",
-    "techStack": ["Node.js", "TypeScript", "Supabase"],
-    "completionDate": "2026-02-20",
-    "category": "Tool",
-    "featured": false,
-    "slug": "bir-research-tool"
   },
   {
     "id": "node-projects",
