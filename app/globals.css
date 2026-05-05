@@ -35,8 +35,16 @@
 /* ── Base ─────────────────────────────────────────────────────── */
 html { scroll-behavior: smooth; }
 
-body {
+body,
+button,
+input,
+textarea,
+select,
+a {
   font-family: var(--font-sans);
+}
+
+body {
   background-color: var(--color-canvas);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;

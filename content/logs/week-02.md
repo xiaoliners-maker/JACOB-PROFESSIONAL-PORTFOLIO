@@ -1,32 +1,33 @@
 ---
-title: "Week 2 — AI Seminar, Field Interviews & BIR Research"
+title: "Week 2 — Innovation Seminar, Field Interviews & HRMS Research"
 slug: "week-02"
 period: "Feb 16–20, 2026"
 week: 2
-tags: ["AI", "Research", "Node.js", "Supabase"]
+tags: ["Research", "Open HRMS", "Odoo", "Community Engagement"]
 ---
 
 ## Overview
 
-A week of learning and fieldwork. Attended an AI seminar, conducted field interviews, and started building a research tool for BIR-related data collection.
+A diverse week mixing field work, community interviews, and independent technical research. Attended an innovation seminar, conducted on-site interviews in Mapandan, and produced research on payroll system architecture.
 
 ## Day-by-Day
 
-**Feb 16** — Attended an internal AI seminar covering practical applications of LLMs in software development. Topics included prompt engineering and integrating AI APIs into web apps.
+**Feb 16** — Joined the seminar on **Innovation 2026: Campus Series** titled *"Programming the Future, One Campus at a Time"* held at the UEP Library Extension.
 
-**Feb 17–18** — Conducted field interviews for a BIR (Bureau of Internal Revenue) compliance research task. Documented findings and structured data for digital entry.
+**Feb 17** — Conducted field interviews in the **Mapandan area** to engage with community members, gather insights, and identify candidates for a future project.
 
-**Feb 19–20** — Built a lightweight Node.js tool to aggregate interview data and generate reports. Connected to Supabase for data persistence.
+**Feb 18** — Transcribed audio recordings from the Mapandan interviews to produce a written record for the team.
 
-## What I Learned
+**Feb 19** — Conducted independent research on **Open HRMS**, built on Odoo. Focused on how its payroll module is structured using **Salary Structures** (templates per employee type) and **Salary Rules** (formulas and conditions for computing pay components). This rule-based design makes the system flexible and customizable without changing the core code.
 
-- How to apply AI tooling in real development contexts
-- Data collection and structuring techniques for research workflows
-- Supabase basics: tables, row-level security, and REST API
-- Interview techniques and translating field data into structured records
+**Feb 20** — Continued team activities at Makerspace Innovhub.
 
-## Technical Notes
+## Key Learnings
 
-- Used `@supabase/supabase-js` client for data operations
-- TypeScript interfaces defined for each interview record type
-- Built a simple CSV export function for the compiled report
+- How community-based user research is conducted in the field
+- Transcription and documentation of qualitative interview data
+- Architecture of Open HRMS payroll: Salary Structures vs. Salary Rules
+
+## Challenges
+
+Field interviews required adaptability — approaching community members, managing audio recordings, and accurately transcribing dialect-heavy conversations for technical documentation.

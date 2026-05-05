@@ -35,10 +35,12 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={handleToggle}
-      className="fixed top-4 right-4 z-50 inline-flex items-center gap-2 rounded-full border border-line bg-card/90 px-4 py-2 text-sm text-ink shadow-[0_12px_32px_rgba(0,0,0,0.25)] backdrop-blur-xl transition hover:border-line-hover hover:bg-card-hover"
+      title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+      aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+      className="fixed top-4 right-4 z-50 inline-flex items-center justify-center rounded-full border border-line bg-card/90 p-3 text-ink shadow-[0_12px_32px_rgba(0,0,0,0.25)] backdrop-blur-xl transition hover:border-line-hover hover:bg-card-hover"
     >
-      {theme === "dark" ? <SunMedium className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-      <span>{theme === "dark" ? "Light mode" : "Dark mode"}</span>
+      {theme === "dark" ? <SunMedium className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+      <span className="sr-only">{theme === "dark" ? "Light mode" : "Dark mode"}</span>
     </button>
   );
 }

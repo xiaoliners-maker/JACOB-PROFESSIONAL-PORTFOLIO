@@ -1,32 +1,31 @@
 ---
-title: "Week 7 — Bug Fixes, UI/UX Polish"
+title: "Week 7 — Push Notifications, Bug Fixes & UI Refinement"
 slug: "week-07"
 period: "Mar 23–27, 2026"
 week: 7
-tags: ["Flutter", "React.js", "UI/UX", "Testing"]
+tags: ["MediTrack", "Push Notifications", "Bug Fixes", "UI/UX", "Flutter"]
 ---
 
 ## Overview
 
-Dedicated polish week — squashed bugs across both the web and mobile apps, refined UI interactions, and improved overall UX consistency.
+A focused polish week — push notification integration was finalized, several bugs were squashed, and the front-end design of MediTrack received significant refinement across both mobile and web platforms.
 
 ## Day-by-Day
 
-**Mar 23** — Conducted a full bug audit across MediTrack web and mobile. Created a prioritized issue list with reproducible steps.
+**Mar 23** — Integrated **push notification alerts** in the MediTrack mobile app to remind users when it's time to take their medications.
 
-**Mar 24–25** — Fixed critical bugs: prescription date display off by one day, Firestore listener not unsubscribing on unmount, and avatar not refreshing after upload.
+**Mar 24** — Fixed several bugs in the mobile application to improve overall performance and stability.
 
-**Mar 26–27** — UI polish pass: consistent spacing, color tokens, typography scale, and loading states. Added skeleton loaders for async data screens.
+**Mar 25** — Enhanced and refined the **front-end design** of MediTrack across both the mobile application and web system, improving visual consistency and usability.
 
-## What I Learned
+**Mar 27** — Continued the enhancement of **front-end development and UI/UX** for both the mobile and web systems of MediTrack, iterating on the previous day's improvements.
 
-- Systematic approach to bug investigation and reproduction
-- React `useEffect` cleanup patterns to prevent memory leaks
-- Importance of design tokens for cross-platform consistency
-- Writing clear bug reports with steps to reproduce
+## Key Learnings
 
-## Technical Notes
+- Push notification delivery and scheduling logic in mobile apps
+- Systematic bug triage: identifying, reproducing, and resolving performance issues
+- Front-end consistency across platforms: maintaining a unified design language on web and mobile simultaneously
 
-- Fixed date issue by normalizing timestamps to ISO 8601 before display
-- Added `dispose()` calls to all Firestore stream subscriptions in Flutter
-- Introduced a shared color constants file for both platforms
+## Challenges
+
+Ensuring push notifications fired correctly at the right times — accounting for device sleep states, timezone differences, and notification permission handling — required thorough testing across different devices.

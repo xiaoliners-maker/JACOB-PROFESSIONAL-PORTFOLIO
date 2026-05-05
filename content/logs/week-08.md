@@ -1,32 +1,29 @@
 ---
-title: "Week 8 — WFH: UI Enhancement & Feature PPT"
+title: "Week 8 — Holy Week Break, Design Polish & MediTrack Presentation"
 slug: "week-08"
 period: "Apr 7–10, 2026"
 week: 8
-tags: ["WFH", "React.js", "UI", "PowerPoint"]
+tags: ["MediTrack", "UI/UX", "Bug Fixes", "PowerPoint", "WFH"]
 ---
 
 ## Overview
 
-Work-from-home week. Focused on UI enhancements to the MediTrack web app and prepared a feature demonstration PowerPoint for internal review.
+Returning from the Holy Week break, this shorter week was dedicated to design improvements, cross-platform bug fixes, and creating a formal **PowerPoint presentation** showcasing MediTrack's key features. Work was done remotely (WFH).
 
 ## Day-by-Day
 
-**Apr 7** — Set up WFH workspace and synced with the team over standup calls. Pulled latest changes and reviewed open issues.
+**Apr 7** — Improved the design of the **MediTrack web and mobile apps**, refining the UI for a cleaner, more polished look. *(WFH)*
 
-**Apr 8–9** — Enhanced the MediTrack web UI: improved the prescription detail modal, added animated loading skeletons, and refined the adherence chart visualization.
+**Apr 8** — Fixed bugs on both platforms (web and mobile) to improve performance and resolve any lingering issues from prior weeks. *(WFH)*
 
-**Apr 10** — Prepared a feature PPT deck showcasing all completed MediTrack features with screenshots, user flows, and technical architecture overview.
+**Apr 10** — Created a **PowerPoint presentation** highlighting MediTrack's key features, intended for stakeholder review and project showcase purposes.
 
-## What I Learned
+## Key Learnings
 
-- Remote-first collaboration: async communication, clear documentation
-- Chart.js integration in React for adherence data visualization
-- How to present technical work to a non-technical audience
-- The value of feature documentation alongside code
+- Design refinement: approaching UI improvements with fresh eyes after a break
+- Cross-platform bug fixing workflow: isolating issues that affect web vs. mobile independently
+- Translating a technical project into a clear, audience-friendly presentation
 
-## Technical Notes
+## Challenges
 
-- Used `recharts` library for the adherence trend line chart
-- Skeleton loaders implemented with CSS animation (`pulse` effect)
-- PPT deck exported as PDF for stakeholder distribution
+Condensing the full scope of MediTrack's features into a concise, visually compelling presentation required careful prioritization of which features and flows to highlight.

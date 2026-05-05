@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const weekColors: Record<number, string> = {
   1: "#888888", 2: "#888888", 3: "#888888", 4: "#888888",
   5: "#888888",  6: "#888888", 7: "#888888", 8: "#888888",
-  9: "#888888", 10: "#888888",
+  9: "#888888", 10: "#888888", 11: "#888888",
 };
 
 export default function LogsPage() {
@@ -25,7 +25,7 @@ export default function LogsPage() {
           <p className="text-xs font-mono text-ink-dim uppercase tracking-widest mb-3">Journal</p>
           <h1 className="text-3xl sm:text-4xl font-semibold text-ink tracking-tight mb-3">Weekly Logs</h1>
           <p className="text-sm text-ink-muted leading-relaxed">
-            Raw notes from 10 weeks of internship — what got built, what broke, and what I learned along the way.
+            Raw notes from {logs.length} weeks of internship — what got built, what broke, and what I learned along the way.
           </p>
         </div>
 

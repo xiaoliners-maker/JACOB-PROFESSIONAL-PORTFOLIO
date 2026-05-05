@@ -1,32 +1,31 @@
 ---
-title: "Week 6 — Edit Profile, Avatar Upload & Push Notifications"
+title: "Week 6 — Profile Features, Push Notifications & Base Build Mapandan"
 slug: "week-06"
 period: "Mar 16–19, 2026"
 week: 6
-tags: ["Flutter", "Firebase Storage", "FCM", "Push Notifications"]
+tags: ["MediTrack", "Flutter", "Push Notifications", "Firebase", "Community Event"]
 ---
 
 ## Overview
 
-Feature-heavy week on the mobile app — added profile editing, avatar upload to Firebase Storage, and push notifications via Firebase Cloud Messaging (FCM).
+A feature-heavy week adding key user-facing functionality to MediTrack — profile editing, avatar uploads, and push notification reminders — capped off with participation in the community **Base Build Mapandan** event.
 
 ## Day-by-Day
 
-**Mar 16–17** — Built the Edit Profile screen: name, contact, and role fields with Firestore write-back. Added image picker integration using `image_picker` package.
+**Mar 16** — Implemented **profile editing** functionality for user information in the MediTrack mobile app, allowing users to update their personal details within the app.
 
-**Mar 18** — Implemented Firebase Storage avatar upload with real-time progress indicator. Images stored under `avatars/{userId}.jpg`.
+**Mar 17** — Added an **avatar upload feature** for both the web and mobile platforms, enabling users to personalize their accounts with a profile photo.
 
-**Mar 19** — Configured FCM for push notifications. Set up notification channels, foreground/background handlers, and topic subscriptions for doctor alerts.
+**Mar 18** — Set up **push notification reminders** in the mobile application, so users receive timely alerts to take their medications as scheduled.
 
-## What I Learned
+**Mar 19** — Participated in **Base Build Mapandan**, a community-based event organized as part of the Hack4Mapandan initiative.
 
-- Firebase Storage upload workflow with progress tracking
-- FCM setup for Flutter: `firebase_messaging` package configuration
-- Handling notification permissions on both Android and iOS (simulator)
-- Form validation patterns in Flutter with `GlobalKey<FormState>`
+## Key Learnings
 
-## Technical Notes
+- Implementing user profile management (editing and avatar upload) across web and mobile
+- Setting up push notification systems in a Flutter mobile app
+- Community engagement and presenting/validating project work in a real-world setting
 
-- Avatar images compressed before upload using `flutter_image_compress`
-- FCM topics: `doctor_alerts`, `patient_reminders`
-- Notification payload includes `prescription_id` for deep linking
+## Challenges
+
+Coordinating the avatar upload feature across both platforms required handling different file systems and storage rules for web vs. mobile while keeping the Firebase storage structure clean.

@@ -3,30 +3,31 @@ title: "Week 1 — Orientation, GitHub & DMS Landing Page"
 slug: "week-01"
 period: "Feb 9–13, 2026"
 week: 1
-tags: ["Orientation", "GitHub", "Next.js", "Tailwind CSS"]
+tags: ["GitHub", "Node.js", "DMS", "HTML", "CSS"]
 ---
 
 ## Overview
 
-First week of the internship — onboarding, setting up the dev environment, and diving straight into the first real project: a landing page for the Document Management System (DMS).
+First week of OJT at Makerspace Innovhub. Got oriented with the company culture and technical workflows, then immediately dove into real project work redesigning and improving the web application system assigned as a Web2 developer.
 
 ## Day-by-Day
 
-**Feb 9** — Attended company orientation. Got introduced to the tech stack, internal tools, and team members. Set up GitHub account under the organization and cloned the starter repos.
+**Feb 9** — Participated in the company orientation session. Attended the interview for the **Web2 position**. Was assigned to redesign and improve the web application system.
 
-**Feb 10–11** — Began work on the DMS landing page. Bootstrapped a Next.js project with Tailwind CSS. Focused on layout planning and component hierarchy.
+**Feb 10** — Assigned to identify and resolve minor bugs within the web application. Made small design improvements to enhance the functionality and appearance of the web application system.
 
-**Feb 12–13** — Completed the responsive landing page with hero section, feature highlights, and CTA. Submitted a pull request and received first code review feedback.
+**Feb 11** — Assigned to design and develop the **landing page for the DMS platform**. Learned and explored the features of **GitHub** to better understand how to use them.
 
-## What I Learned
+**Feb 12** — Fixed issues with the **document upload feature** in the DMS. Designed the landing page for the system.
 
-- How to structure a Next.js project from scratch with App Router
-- Tailwind utility-first approach for rapid UI development
-- Git branching conventions used by the team
-- How to write meaningful commit messages and PR descriptions
+**Feb 13** — Completed a review and study of **Node.js**, including its practical usage.
 
-## Technical Notes
+## Key Learnings
 
-- Used `next/image` for optimized image loading
-- Applied responsive grid layout: 1-col mobile, 2-col tablet, 3-col desktop
-- Implemented accessible button components with proper focus states
+- GitHub features and version control in a team environment
+- Identifying and resolving bugs in a live web application
+- Designing and developing a landing page for a real-world DMS platform
+
+## Challenges
+
+Balancing bug fixes with new feature development (landing page design) while getting up to speed with the existing codebase and team workflows.

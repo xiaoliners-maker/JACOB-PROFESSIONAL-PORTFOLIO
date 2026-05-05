@@ -1,35 +1,31 @@
 ---
-title: "Week 4 — H4M PPT & MediTrack Core Development"
+title: "Week 4 — MediTrack System Development & Mobile App Kickoff"
 slug: "week-04"
 period: "Mar 3–6, 2026"
 week: 4
-tags: ["MediTrack", "React", "PowerPoint", "SYNERGY", "Firebase"]
+tags: ["MediTrack", "Flutter", "Mobile Development", "Hack4Mapandan", "Webinar"]
 ---
 
 ## Overview
 
-MediTrack development picked up pace this week. Delivered the H4M competition presentation and began building the core web system in parallel.
+Full focus on building the **MediTrack** system for Hack4Mapandan — a health-focused medication tracking platform. This week saw the system take shape from initial development all the way to a working mobile application, alongside attendance at a multi-day webinar series.
 
 ## Day-by-Day
 
-**Mar 3** — Finished the **Hack4Mapandan PowerPoint** presentation for the Health Maintenance Medication Tracking entry. Continued core MediTrack web system development.
+**Mar 3** — Began developing the system for the Hack4Mapandan health track: **Health: Maintenance Medication Tracking**. Started building the MediTrack web system from scratch.
 
-**Mar 4–5** — Continued implementing MediTrack features: patient dashboard, prescription listings, and adherence tracking components. Applied minor revisions based on internal testing.
+**Mar 4** — Continued progress on the MediTrack Health: Maintenance Medication Tracking initiative. Pushed forward with feature development and UI layout.
 
-**Mar 6** — Participated in **Day 3 of the SYNERGY webinar series** — a professional development series covering tech innovation topics.
+**Mar 5** — Developed a **mobile application** for MediTrack using Flutter to complement the web system, giving the project a cross-platform presence.
 
-## Technical Progress
+**Mar 6** — Attended a **3-day webinar series** conducted via Google Meet, covering relevant technical and industry topics.
 
-Started structuring the MediTrack web system with:
+## Key Learnings
 
-- React component architecture
-- Firebase project setup (`meditrack-f5582`)
-- Firestore collection planning: `doctor_alerts`, `log_entries`
-- Role-based routing for Doctor vs Patient views
+- Full-stack development: building a web system alongside a mobile app simultaneously
+- Introduction to **Flutter** for cross-platform mobile development
+- Balancing active project development with professional development (webinar attendance)
 
-## What I Learned
+## Challenges
 
-- How to balance presentation delivery with active development
-- Firebase Authentication for role-based access control
-- Firestore real-time listeners for live dashboard updates
-- Professional communication and presentation skills from SYNERGY
+Developing both a web and mobile application in parallel within a tight hackathon timeline required careful task prioritization and efficient code organization.

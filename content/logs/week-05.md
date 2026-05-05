@@ -1,32 +1,33 @@
 ---
-title: "Week 5 — Flutter Mobile App & Firebase Integration"
+title: "Week 5 — Firebase Integration & MediTrack UI/UX Polish"
 slug: "week-05"
 period: "Mar 9–13, 2026"
 week: 5
-tags: ["Flutter", "Dart", "Firebase", "Mobile"]
+tags: ["MediTrack", "Firebase", "Flutter", "UI/UX", "Mobile Development"]
 ---
 
 ## Overview
 
-Pivoted to mobile this week — began building the Flutter companion app for MediTrack with Firebase as the backend.
+A deep technical week centered on integrating **Firebase** as the backend for MediTrack and refining the overall user experience. By end of week, both the web and mobile systems were connected to a live database with an improved UI.
 
 ## Day-by-Day
 
-**Mar 9** — Set up Flutter development environment. Initialized the `meditrack_mobile` project and configured Firebase via `flutterfire configure`.
+**Mar 9** — Revised the **MediTrack frontend** design and planned the integration of a **Firebase** database as the backend solution.
 
-**Mar 10–11** — Built the core screens: Login, Patient Dashboard, Prescription List, and Adherence Log. Applied Material Design 3 components throughout.
+**Mar 10** — Continued developing MediTrack and began implementing the **mobile application using Flutter**, establishing the project's cross-platform architecture.
 
-**Mar 12–13** — Integrated Firestore real-time listeners for prescription and alert data. Set up Firebase Auth for login/logout flow with role detection.
+**Mar 11** — Developed the MediTrack mobile application and **integrated it with the web system**, ensuring data and feature parity across both platforms.
 
-## What I Learned
+**Mar 12** — Connected both the MediTrack mobile application and web system to **Firebase**, enabling real-time data storage and retrieval.
 
-- Flutter widget tree and state management with `setState`
-- Dart null safety and strong typing practices
-- `StreamBuilder` for real-time Firestore data
-- Firebase Auth flow for mobile: sign in, sign out, and auth state persistence
+**Mar 13** — Enhanced the frontend design and improved the **UI/UX** of MediTrack across both platforms for better usability and a more polished user experience.
 
-## Technical Notes
+## Key Learnings
 
-- Used `cloud_firestore` and `firebase_auth` Flutter packages
-- Created reusable `PrescriptionCard` and `AlertBadge` widgets
-- Implemented bottom navigation with role-aware tab visibility
+- Firebase setup and integration for a real-time cross-platform backend
+- Syncing a Flutter mobile app with a web system through a shared database
+- Iterative UI/UX improvement: identifying friction points and refining layouts
+
+## Challenges
+
+Connecting two separate codebases (web and mobile) to the same Firebase instance required careful data modeling to prevent schema conflicts and ensure consistency across platforms.

@@ -1,33 +1,35 @@
 ---
-title: "Week 10 — Final Mobile UI Polish & Completion"
+title: "Week 10 — MediTrack Web Refinement, Deployment Fixes & Connectivity"
 slug: "week-10"
 period: "Apr 20–25, 2026"
 week: 10
-tags: ["Flutter", "UI/UX", "Completion", "Mobile"]
+tags: ["MediTrack", "Vercel", "Firebase", "Bug Fixes", "Testing", "WFH"]
 ---
 
 ## Overview
 
-Final week of the internship. Focused on polishing the MediTrack mobile app to production-ready quality, conducting final testing, and wrapping up all deliverables.
+Post-hackathon stabilization week. Focused on refining the MediTrack web system, resolving persistent Vercel deployment issues, finalizing mobile features, and ensuring reliable connectivity and data accuracy across both platforms.
 
 ## Day-by-Day
 
-**Apr 20–21** — Final UI polish on the Flutter app: refined typography, spacing, icon sizing, and color consistency across all screens. Applied dark mode support.
+**Apr 20** — Refined the **MediTrack Web system** and resolved existing issues, improving stability and layout consistency. *(WFH)*
 
-**Apr 22** — Conducted end-to-end testing on Android emulator. Fixed three remaining UI bugs and verified all Firestore operations.
+**Apr 21** — Fixed **deployment-related problems in Vercel**, ensuring the web application builds and runs correctly in the production environment. *(WFH)*
 
-**Apr 23–24** — Wrote technical documentation for the MediTrack system: setup guide, data model reference, and feature checklist.
+**Apr 22** — Finalized the **mobile application features** of MediTrack, completing any outstanding functionality that was deferred from the hackathon sprint.
 
-**Apr 25** — Final internship wrap-up. Presented completed work to the team, received feedback, and submitted all project deliverables.
+**Apr 23** — Tested the **MediTrack mobile app** to identify bugs and fix them. *(WFH)*
 
-## Reflection
+**Apr 24** — Assessed **system connectivity and data accuracy** for the MediTrack mobile and web platforms — verifying that real-time data flows correctly between Firebase and both clients. *(WFH)*
 
-Over 10 weeks, I went from setting up my first company repo to shipping a full-stack health system across web and mobile. The most valuable lessons weren't purely technical — they were about communication, iteration, and ownership.
+**Apr 25** — Fixed **MediTrack connectivity** issues affecting both the mobile app and the web platform, ensuring seamless sync between the two. *(WFH)*
 
-MediTrack taught me what it means to build something real: with real users in mind, real constraints to navigate, and real pride in the outcome.
+## Key Learnings
 
-## Technical Notes
+- Production deployment stability: diagnosing Vercel config and environment issues
+- Cross-platform data validation: ensuring Firebase data is read and written consistently across web and mobile
+- Post-hackathon QA: transitioning from sprint-mode to systematic stabilization
 
-- Added `ThemeMode.system` support in Flutter for dark/light auto-switching
-- Final app size: 8.2MB APK (optimized with `--split-per-abi`)
-- Full documentation published to the project's GitHub wiki
+## Challenges
+
+Connectivity issues between the mobile app and web platform proved persistent — tracing them required careful inspection of Firebase security rules, API endpoints, and network request handling on both sides.

@@ -2,7 +2,7 @@ import Container from "@/components/atoms/Container";
 import Button from "@/components/atoms/Button";
 import ProjectCard from "@/components/molecules/ProjectCard";
 import Timeline from "@/components/organisms/Timeline";
-import { getFeaturedProjects, getAllLogMeta } from "@/lib/content";
+import { getFeaturedProjects, getAllLogMeta, getAllProjects, getAllTechStacks } from "@/lib/content";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, ExternalLink, BookOpen } from "lucide-react";
@@ -32,6 +32,10 @@ const experience = [
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
   const logs = getAllLogMeta();
+  const recentProject = [...featuredProjects]
+    .sort((a, b) => new Date(b.completionDate).getTime() - new Date(a.completionDate).getTime())[0];
+  const totalProjects = getAllProjects().length;
+  const totalTechStacks = getAllTechStacks().length;
 
   return (
     <div className="py-16">
@@ -80,6 +84,19 @@ export default function HomePage() {
                   <ExternalLink className="w-4 h-4" />
                   View Work
                 </Button>
+
+                {recentProject?.liveUrl && (
+                  <Button
+                    href={recentProject.liveUrl}
+                    external
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Live Demo
+                  </Button>
+                )}
 
                 <Button
                   href="/logs"
@@ -137,7 +154,7 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-semibold text-ink">
-              Tech Stack
+              Tech Stack ({totalTechStacks})
             </h2>
             <Button variant="ghost" size="sm">
               View All →
@@ -190,7 +207,7 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-semibold text-ink">
-              Recent Projects
+              Recent Projects ({totalProjects})
             </h2>
             <Button href="/work" variant="ghost" size="sm">
               View All →

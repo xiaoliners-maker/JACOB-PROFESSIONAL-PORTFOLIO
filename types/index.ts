@@ -7,6 +7,8 @@ export interface Project {
   category: string;
   featured: boolean;
   slug: string;
+  liveUrl?: string;
+  repoUrl?: string;
 }
 
 export interface Log {
