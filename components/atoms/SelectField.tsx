@@ -13,19 +13,25 @@ export default function SelectField({
   ...props
 }: SelectFieldProps) {
   return (
-    <div className="flex flex-col gap-1 animate-fade-up">
+    <div className="flex flex-col gap-1">
       {label && (
         <label className="text-sm font-medium text-ink">{label}</label>
       )}
       <select
         className={cn(
-          "bg-card border border-line text-ink text-base px-4 py-2.5",
-          "transition-all duration-300 focus:outline-none",
+          "text-ink text-base px-4 py-2.5",
+          "transition-colors hover:border-line-hover focus:outline-none",
           "disabled:opacity-50 disabled:cursor-not-allowed",
-          error && "border-red-500/50 focus:border-red-500",
+          error && "border-red-500/50",
           className
         )}
-        style={{ borderRadius: "var(--radius-md)" }}
+        style={{
+          borderRadius: "var(--radius-md)",
+          backgroundColor: "var(--color-card-hover)",
+          border: "1px solid var(--color-line-hover)",
+          color: "var(--color-ink)",
+          colorScheme: "dark",
+        }}
         {...props}
       />
       {error && <span className="text-xs text-red-400">{error}</span>}
