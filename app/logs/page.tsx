@@ -21,7 +21,7 @@ export default function LogsPage() {
   return (
     <div className="py-16">
       <Container narrow>
-        <div className="bg-card border border-line rounded-[14px] p-6 sm:p-8 mb-8">
+        <div className="bg-card border border-line rounded-[14px] p-6 sm:p-8 mb-8 animate-fade-up">
           <p className="text-xs font-mono text-ink-dim uppercase tracking-widest mb-3">Journal</p>
           <h1 className="text-3xl sm:text-4xl font-semibold text-ink tracking-tight mb-3">Weekly Logs</h1>
           <p className="text-sm text-ink-muted leading-relaxed">

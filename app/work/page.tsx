@@ -17,7 +17,7 @@ export default function WorkPage() {
   return (
     <div className="py-16">
       <Container>
-        <section className="mb-16">
+        <section className="mb-16 animate-fade-up">
           <h1 className="text-3xl sm:text-4xl font-semibold text-ink tracking-tight mb-4">All Work ({projects.length})</h1>
           <p className="text-base text-ink-muted leading-relaxed max-w-2xl">
             Every project built across {logs.length} weeks of internship — from landing pages and research tools

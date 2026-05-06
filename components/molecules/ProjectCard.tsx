@@ -18,15 +18,15 @@ function formatDate(dateStr: string) {
 
 
 
-const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
+const categoryColorVars: Record<string, { bg: string; text: string; border: string }> = {
 
-  "Web App":    { bg: "bg-blue-500/10",   text: "text-blue-400",   border: "border-blue-500/20" },
+  "Web App":    { bg: "var(--color-cat-web-bg)",          text: "var(--color-cat-web-text)",          border: "var(--color-cat-web-border)" },
 
-  "Mobile App": { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/20" },
+  "Mobile App": { bg: "var(--color-cat-mobile-bg)",       text: "var(--color-cat-mobile-text)",       border: "var(--color-cat-mobile-border)" },
 
-  Hackathon:   { bg: "bg-amber-500/10",   text: "text-amber-400",  border: "border-amber-500/20" },
+  Hackathon:   { bg: "var(--color-cat-hackathon-bg)",    text: "var(--color-cat-hackathon-text)",    border: "var(--color-cat-hackathon-border)" },
 
-  Tool:        { bg: "bg-violet-500/10",  text: "text-violet-400", border: "border-violet-500/20" },
+  Tool:        { bg: "var(--color-cat-tool-bg)",         text: "var(--color-cat-tool-text)",         border: "var(--color-cat-tool-border)" },
 
 };
 
@@ -34,20 +34,26 @@ const categoryColors: Record<string, { bg: string; text: string; border: string 
 
 export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
-  const cat = categoryColors[project.category] ?? { bg: "bg-accent/10", text: "text-accent-text", border: "border-accent/20" };
+  const cat = categoryColorVars[project.category] ?? { 
+
+    bg: "var(--color-accent)",
+
+    text: "var(--color-accent-text)",
+
+    border: "var(--color-accent)"
+
+  };
 
 
 
   return (
-
-    <article className="group relative flex flex-col gap-3 mb-6">
+    <article className="group relative flex flex-col gap-3 mb-6 p-6 bg-card border border-line hover:border-line-hover hover:bg-card-hover transition-all duration-300 animate-fade-up hover:shadow-lg hover:shadow-accent/5" style={{ borderRadius: "var(--radius-lg)" }}>
 
 
 
       {/* Header */}
 
       <div className="flex-1 min-w-0">
-
         <h3 className="text-lg font-semibold text-ink leading-snug mb-1">
 
           {project.title}
@@ -92,15 +98,15 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
       {/* Footer */}
 
-      <div className="flex items-center justify-between pt-2 border-t border-line">
+      <div className="flex items-center justify-between pt-2 border-t border-line group-hover:border-line-hover transition-colors duration-300">
 
         <span className="text-[10px] font-mono text-ink-dim">{formatDate(project.completionDate)}</span>
 
-        <span className="text-xs text-ink-dim flex items-center gap-1 transition-colors duration-200 group-hover:text-accent-text">
+        <span className="text-xs text-ink-dim flex items-center gap-1 transition-all duration-300 group-hover:text-accent-text group-hover:translate-x-0.5">
 
           View details
 
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="transition-transform duration-200 group-hover:translate-x-0.5">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="transition-transform duration-300 group-hover:translate-x-0.5">
 
             <path d="M2.5 6h7m0 0L6.5 3m3 3-3 3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
 

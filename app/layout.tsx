@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ThemeToggle from "@/components/atoms/ThemeToggle";
 import Footer from "@/components/organisms/Footer";
+import { LoadingProvider } from "@/components/providers/LoadingProvider";
+import GlobalLoadingOverlay from "@/components/atoms/GlobalLoadingOverlay";
 
 export const metadata: Metadata = {
   title: {
@@ -26,9 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-sans antialiased bg-canvas text-ink">
-        <ThemeToggle />
-        <main className="pt-0">{children}</main>
-        <Footer />
+        <LoadingProvider>
+          <ThemeToggle />
+          <GlobalLoadingOverlay />
+          <main className="pt-0">{children}</main>
+          <Footer />
+        </LoadingProvider>
       </body>
     </html>
   );
