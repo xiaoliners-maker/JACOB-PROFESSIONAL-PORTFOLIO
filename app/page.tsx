@@ -3,6 +3,14 @@ import Button from "@/components/atoms/Button";
 import ProjectCard from "@/components/molecules/ProjectCard";
 import { getFeaturedProjects, getAllLogMeta, getAllProjects, getAllTechStacks } from "@/lib/content";
 import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jerico P. Jacob — Frontend Developer Intern",
+  description:
+    "Portfolio of Jerico P. Jacob — a frontend developer intern at Makerspace Innovhub, University of Eastern Pangasinan.",
+};
 
 const techStack = {
   frontend: ["React.js", "Next.js", "Flutter", "TypeScript", "Tailwind CSS"],
@@ -41,17 +49,18 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="flex flex-col sm:flex-row sm:items-start gap-8">
 
-            {/* Avatar (No Hover) */}
+            {/* Avatar */}
             <div className="flex-shrink-0 w-28 h-28 rounded-2xl overflow-hidden border border-accent/30">
-                <img
-                  src="/jerico.jpg"
-                  alt="Jerico P. Jacob"
-                  width={112}
-                  height={112}
-                  decoding="sync"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <Image
+                src="/jerico.jpg"
+                alt="Jerico P. Jacob"
+                width={112}
+                height={112}
+                priority
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-3">
                 <h1 className="text-3xl font-semibold text-ink">
@@ -123,9 +132,7 @@ export default function HomePage() {
 
         {/* Experience */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-ink mb-8">
-            Experience
-          </h2>
+          <h2 className="text-2xl font-semibold text-ink mb-8">Experience</h2>
           <div className="space-y-8">
             {experience.map((exp, i) => (
               <div key={i} className="flex gap-4">
@@ -159,9 +166,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-ink mb-4">
-                Frontend
-              </h3>
+              <h3 className="text-lg font-semibold text-ink mb-4">Frontend</h3>
               <div className="space-y-2">
                 {techStack.frontend.map((tech) => (
                   <span key={tech} className="block text-base text-ink-muted">
@@ -172,9 +177,7 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-ink mb-4">
-                Backend
-              </h3>
+              <h3 className="text-lg font-semibold text-ink mb-4">Backend</h3>
               <div className="space-y-2">
                 {techStack.backend.map((tech) => (
                   <span key={tech} className="block text-base text-ink-muted">
@@ -185,9 +188,7 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-ink mb-4">
-                DevOps & Cloud
-              </h3>
+              <h3 className="text-lg font-semibold text-ink mb-4">DevOps & Cloud</h3>
               <div className="space-y-2">
                 {techStack.devops.map((tech) => (
                   <span key={tech} className="block text-base text-ink-muted">
@@ -222,9 +223,7 @@ export default function HomePage() {
         {/* Recent Logs */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-semibold text-ink">
-              Recent Logs
-            </h2>
+            <h2 className="text-2xl font-semibold text-ink">Recent Logs</h2>
             <Button href="/logs" variant="ghost" size="sm">
               View All →
             </Button>
@@ -254,7 +253,6 @@ export default function HomePage() {
             ))}
           </div>
         </section>
-
       </Container>
     </div>
   );
