@@ -28,8 +28,7 @@ export default function Timeline() {
           {timelineData.map((item, i) => (
             <div
               key={item.week}
-              className="flex gap-5 items-start animate-fade-up"
-              style={{ animationDelay: `${i * 40}ms` }}
+              className="flex gap-5 items-start"
             >
               {/* Dot */}
               <div

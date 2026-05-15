@@ -47,7 +47,7 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
 
   return (
-    <article className="group relative flex flex-col gap-3 mb-6 p-6 bg-card border border-line hover:border-line-hover hover:bg-card-hover transition-all duration-300 animate-fade-up hover:shadow-lg hover:shadow-accent/5" style={{ borderRadius: "var(--radius-lg)" }}>
+    <article className="group relative flex flex-col gap-3 mb-6 p-6 bg-card border border-line hover:border-line-hover hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-accent/5" style={{ borderRadius: "var(--radius-lg)" }}>
 
 
 

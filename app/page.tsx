@@ -41,7 +41,7 @@ export default function HomePage() {
     <div className="py-16">
       <Container>
         {/* Header */}
-        <section className="mb-16 animate-fade-up">
+        <section className="mb-16">
           <div className="flex flex-col sm:flex-row sm:items-start gap-8">
 
             {/* Avatar (No Hover) */}
@@ -113,7 +113,7 @@ export default function HomePage() {
         </section>
 
         {/* About */}
-        <section className="mb-16 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        <section className="mb-16">
           <h2 className="text-2xl font-semibold text-ink mb-6">About</h2>
           <p className="text-base text-ink-muted leading-relaxed max-w-2xl">
             I am a dedicated developer with a strong foundation in web
@@ -126,7 +126,7 @@ export default function HomePage() {
         </section>
 
         {/* Experience */}
-        <section className="mb-16 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <section className="mb-16">
           <h2 className="text-2xl font-semibold text-ink mb-8">
             Experience
           </h2>
@@ -151,7 +151,7 @@ export default function HomePage() {
         </section>
 
         {/* Tech Stack */}
-        <section className="mb-16 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+        <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-semibold text-ink">
               Tech Stack ({totalTechStacks})
@@ -204,7 +204,7 @@ export default function HomePage() {
         </section>
 
         {/* Recent Projects */}
-        <section className="mb-16 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+        <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-semibold text-ink">
               Recent Projects ({totalProjects})
@@ -224,7 +224,7 @@ export default function HomePage() {
         </section>
 
         {/* Recent Logs */}
-        <section className="mb-16 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+        <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-semibold text-ink">
               Recent Logs
