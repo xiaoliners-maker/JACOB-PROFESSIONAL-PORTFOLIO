@@ -1,6 +1,5 @@
 import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
-import { ExternalLink, GitBranch } from "lucide-react";
 
 import type { Project } from "@/types";
 
@@ -125,7 +124,6 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
             size="sm"
             className="text-xs px-3 py-1 h-auto"
           >
-            <ExternalLink className="w-3 h-3 mr-1" />
             Live Demo
           </Button>
         )}
@@ -137,7 +135,6 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
             size="sm"
             className="text-xs px-3 py-1 h-auto"
           >
-            <GitBranch className="w-3 h-3 mr-1" />
             Repo
           </Button>
         )}

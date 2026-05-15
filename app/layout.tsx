@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -18,8 +17,6 @@ const dmMono = DM_Mono({
   weight: ["300", "400", "500"],
 });
 
-const ThemeToggle = dynamic(() => import("@/components/atoms/ThemeToggle"));
-
 export const metadata: Metadata = {
   title: {
     default: "Jerico P. Jacob — Makerspace Innovhub Intern",
@@ -35,7 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${dmSans.variable} ${dmMono.variable} scroll-smooth`}>
       <body className="font-sans antialiased bg-canvas text-ink">
-        <ThemeToggle />
         <main className="pt-0">{children}</main>
         <Footer />
       </body>

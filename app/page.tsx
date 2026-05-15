@@ -4,8 +4,6 @@ import ProjectCard from "@/components/molecules/ProjectCard";
 import Timeline from "@/components/organisms/Timeline";
 import { getFeaturedProjects, getAllLogMeta, getAllProjects, getAllTechStacks } from "@/lib/content";
 import Link from "next/link";
-import Image from "next/image";
-import { MapPin, ExternalLink, BookOpen } from "lucide-react";
 
 const techStack = {
   frontend: ["React.js", "Next.js", "Flutter", "TypeScript", "Tailwind CSS"],
@@ -46,16 +44,14 @@ export default function HomePage() {
 
             {/* Avatar (No Hover) */}
             <div className="flex-shrink-0 w-28 h-28 rounded-2xl overflow-hidden border border-accent/30 shadow-[0_0_30px_rgba(255,0,0,0.15)]">
-              <Image
-                src="/jerico.jpg"
-                alt="Jerico P. Jacob"
-                width={112}
-                height={112}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-
+                <img
+                  src="/jerico.jpg"
+                  alt="Jerico P. Jacob"
+                  width={112}
+                  height={112}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-3">
                 <h1 className="text-3xl font-semibold text-ink">
@@ -64,7 +60,10 @@ export default function HomePage() {
               </div>
 
               <div className="flex items-center gap-2 mb-2">
-                <MapPin className="w-4 h-4 text-ink-muted" />
+                <svg className="w-4 h-4 text-ink-muted" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="12" cy="9" r="2.5" fill="currentColor" />
+                </svg>
                 <p className="text-base text-ink-muted">
                   Pangasinan, Philippines
                 </p>
@@ -81,7 +80,6 @@ export default function HomePage() {
                   size="sm"
                   className="flex items-center gap-2"
                 >
-                  <ExternalLink className="w-4 h-4" />
                   View Work
                 </Button>
 
@@ -93,7 +91,6 @@ export default function HomePage() {
                     size="sm"
                     className="flex items-center gap-2"
                   >
-                    <ExternalLink className="w-4 h-4" />
                     Live Demo
                   </Button>
                 )}
@@ -104,7 +101,6 @@ export default function HomePage() {
                   size="sm"
                   className="flex items-center gap-2"
                 >
-                  <BookOpen className="w-4 h-4" />
                   Read Logs
                 </Button>
               </div>
