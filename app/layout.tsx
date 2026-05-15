@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import { DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
-import ThemeToggle from "@/components/atoms/ThemeToggle";
+import dynamic from "next/dynamic";
 import Footer from "@/components/organisms/Footer";
+
+const ThemeToggle = dynamic(() => import("@/components/atoms/ThemeToggle"), {
+  ssr: false,
+});
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
   weight: ["400", "600"],
+  preload: true,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const dmMono = DM_Mono({
@@ -16,6 +22,8 @@ const dmMono = DM_Mono({
   display: "swap",
   variable: "--font-mono",
   weight: ["400"],
+  preload: true,
+  fallback: ["monospace"],
 });
 
 export const metadata: Metadata = {
