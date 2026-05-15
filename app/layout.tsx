@@ -7,14 +7,14 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "600"],
 });
 
 const dmMono = DM_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mono",
-  weight: ["300", "400", "500"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "Portfolio of Jerico P. Jacob — a frontend developer intern at Makerspace Innovhub, University of Eastern Pangasinan.",
   keywords: ["frontend", "developer", "Next.js", "React", "Flutter", "TypeScript", "Tailwind CSS", "portfolio", "intern", "Pangasinan"],
   authors: [{ name: "Jerico P. Jacob" }],
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

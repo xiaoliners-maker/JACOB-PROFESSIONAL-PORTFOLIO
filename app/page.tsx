@@ -1,7 +1,6 @@
 import Container from "@/components/atoms/Container";
 import Button from "@/components/atoms/Button";
 import ProjectCard from "@/components/molecules/ProjectCard";
-import Timeline from "@/components/organisms/Timeline";
 import { getFeaturedProjects, getAllLogMeta, getAllProjects, getAllTechStacks } from "@/lib/content";
 import Link from "next/link";
 
@@ -43,12 +42,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-start gap-8">
 
             {/* Avatar (No Hover) */}
-            <div className="flex-shrink-0 w-28 h-28 rounded-2xl overflow-hidden border border-accent/30 shadow-[0_0_30px_rgba(255,0,0,0.15)]">
+            <div className="flex-shrink-0 w-28 h-28 rounded-2xl overflow-hidden border border-accent/30">
                 <img
                   src="/jerico.jpg"
                   alt="Jerico P. Jacob"
                   width={112}
                   height={112}
+                  decoding="sync"
                   className="w-full h-full object-cover"
                 />
               </div>
